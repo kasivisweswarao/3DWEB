@@ -105,8 +105,8 @@ class Website3DDemo {
   }
 
   OnScroll(pos) {
-    const a = 15;
-    const b = -15;
+    const a = 50;
+    const b = -50;
     const amount = Math.min(pos / 500.0, 1.0);
     this._camera.position.set(a + amount * (b - a), 15, 20);
     this._controls.update();
